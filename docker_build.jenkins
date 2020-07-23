@@ -37,14 +37,6 @@ pipeline {
                 docker push storm62/fixik
                 '''
             }
-        }
-        stage("docker run") {
-            steps {
-                echo " ============== start pushing image =================="
-                sh '''
-                docker run -d -p 3110:8000 storm62/fixik
-                '''
-            }
-        }
+        }        
     }
 }
