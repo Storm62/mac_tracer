@@ -42,7 +42,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker run -d -p 8080:3110 storm62/fixik
+                docker run -d -p 3110:3110 storm62/fixik
                 '''
             }
         }
