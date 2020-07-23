@@ -34,7 +34,7 @@ pipeline {
             steps {
                 echo " ============== start pushing image =================="
                 sh '''
-                docker push storm62/fixik:latest
+                docker push storm62/fixik
                 '''
             }
         }
