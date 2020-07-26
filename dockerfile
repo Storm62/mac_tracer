@@ -2,7 +2,7 @@ FROM tomcat
 
 MAINTAINER Pavel_Oleg
 
-RUN apt-get update && apt-get -y upgrade
+RUN apt-get update
 
 WORKDIR /usr/local/tomcat
 
@@ -10,4 +10,4 @@ WORKDIR /usr/local/tomcat
 #COPY context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
 COPY app.war /usr/local/tomcat/webapps/ROOT.war
 ADD app.war /usr/local/tomcat/webapps/
-EXPOSE 8080
+EXPOSE 8000
