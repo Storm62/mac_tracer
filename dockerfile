@@ -10,4 +10,4 @@ WORKDIR /usr/local/tomcat
 #COPY context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
 COPY app.war /usr/local/tomcat/webapps/ROOT.war
 ADD app.war /usr/local/tomcat/webapps/
-EXPOSE 8000
+EXPOSE 80
