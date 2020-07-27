@@ -2,7 +2,7 @@ FROM tomcat:9.0-alpine
 
 MAINTAINER Pavel_Oleg
 
-RUN apt-get update
+RUN apt-get update && apt-get -y upgrade
 
 WORKDIR /usr/local/tomcat
 
