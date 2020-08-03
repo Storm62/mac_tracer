@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage("_TEST_") {
             steps {
-                echo " ============== |-| TeST WeBHooKs |-|  =================="             
+                echo " ============== TeST WeBHooKs  =================="             
             }
         }
     }
