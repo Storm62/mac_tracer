@@ -1,3 +1,19 @@
-pause 500
-echo "hello world"
-echo "end"
+#!groovy
+// simple job for test webhooks
+properties([disableConcurrentBuilds()])
+
+pipeline {
+    agent { 
+        label 'master'
+        }
+    triggers { GitHub hook trigger for GITScm polling }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
+        timestamps()
+    }
+    stages {
+        stage("_TEST_") {
+            steps {
+                echo " ============== TeST WeBHooKs =================="             
+            }
+        }
