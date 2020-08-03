@@ -1,0 +1,3 @@
+pause 500
+echo "hello world"
+echo "end"
